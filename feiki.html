@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="非齐3D定鞋系统是国内首家女性高端时尚3D仿真定制电子商务平台，致力于为年轻时尚爱美的女性用户提供最高端的精选上千上万种女鞋风格，为广大用户提供最优质高端大气时尚的女鞋，时尚高雅的购物体验。通过本平台建立消费者与品质制造商的桥梁，将消费者的需求直接发送到商家，按需生产模式既满足了消费者个性化一对一的需求，又短路了复杂的商品流通环节，真正让消费者享受到专属私人定制且高品质的商品，解决了国内长期存在消费者购鞋遇到的难点同时实现零库存销售模式实现消费者跟商家双赢共利。"/>
+    <meta name="Keywords" content="非齐;3D;品牌;非齐商城;非齐平台;非齐电商;工业4.0;3D定制平台;定制商城;高端定制;定制鞋;女鞋;定制高跟鞋" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>非齐 - 全球首家3D女鞋定制电子商务平台</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/Feiki.js"></script>
+    <script type="text/javascript" src="js/Detector.js"></script>
+    <script type="text/javascript" src="js/OrbitControls.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/ScrollPic.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/base.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link href="css/shoes.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="topbox">
+<nav class="auto w1200">
+<span>“<font color="#FFFFFF"></font>欢迎光临非齐官网商城！”</span>
+<a class="inline" href="">在线客服</a>
+<a href="">关注我们</a>
+<a href="">我的订单</a>
+<a href="">我的店铺</a>
+<a href="">免费注册</a>
+<a href="">请登录</a>
+<a class="qq" target="_blank" href="">QQ登录</a>
+</nav>
+</div>
+<ul id="headnav" class="auto w1200">
+<li class="mg_t20">
+<a href="__ROOT__/index.php"><img class="f_l " src="images/logo.png" alt="logo" name="logo" /></a>
+<img class="f_l mg_t40" src="images/title.png" alt="tilte" name="tilte" /></li>
+<li></li>
+<li class="headnavbox">
+	 <a href="__ROOT__/index.php">首页</a>
+     <a href="__ROOT__/index.php/home/produst/produstlist/">3D云设计</a>
+     <a href="__ROOT__/index.php/home/mall/malllist/">定制商城</a>
+     <a href="__ROOT__/index.php/home/news/newslist/">鞋文化</a>
+     <a href="__ROOT__/index.php/home/about/aboutus/">关于我们</a> 
+     <a href="__ROOT__/index.php/home/help/helplist/">帮助中心</a> 
+</li>
+<li class="search">
+	<img class="f_l mg_l8" src="images/quality.png" alt="quality" name="quality" />
+    <img class="f_l mg_l8" src="images/quality-1.png" alt="quality" name="quality" />
+    <img class="f_l mg_l8" src="images/quality-2.png" alt="quality" name="quality" />
+</li>
+</ul>
+<div class="topline"></div>
+<div class="HideM" id="SHM"></div>
+<form name="shoppingcart" id="shoppingcart" method="post" action="__URL__/shopping/">
+   <input type="hidden" name="UName" id="UName" value="{$name}"  autocomplete="off"/>
+   <input type="hidden" name="S" id="S" value="{$list.produst_style}" autocomplete="off" />
+   <input type="hidden" name="N" id="N" value="{$loadnumber}" autocomplete="off" />
+   <input type="hidden" name="J" id="J" value="" autocomplete="off" />
+   <input type="hidden" name="ID" id="ID" value="{$list.id}" autocomplete="off" />
+   <input type="hidden" name="A" id="A" value="{$list.shoesid}" autocomplete="off" />  
+   <input type="hidden" name="B" id="B" value="{$list.shoesname}" autocomplete="off" />
+   <input type="hidden" name="C" id="C" value="{$list.name}" autocomplete="off" />                   
+   <input type="hidden" name="D" id="D" value="{$list.mname}" autocomplete="off" />
+   <input type="hidden" name="E" id="E" value="{$list.image}" autocomplete="off" />
+   <input type="hidden" name="F" id="F" value="{$list.price}" autocomplete="off" />
+   <input type="hidden" name="G" id="G" value="{$list.rate}" autocomplete="off" />
+   <input type="hidden" name="H" id="H" value="{$list.typeid}" autocomplete="off" />
+   <input type="hidden" name="M" id="M" value="{$list.produst_shoesmid}" autocomplete="off" />
+   <input type="hidden" name="Size" id="Size" value="" autocomplete="off" />
+   <input type="hidden" name="Simage" id="Simage" value="" autocomplete="off" />
+   
+</form>   
+<div class="main">
+    <div class="loction"><ul><li>当前位置：非齐商城>>3D云设计</li></ul></div>
+    <div id="dingzhi-bigbox">
+        <div id="Feiki">
+            <div id="Loading">
+                <img src="images/Loading.gif" style="background:transparent;" width="80" height="80" class="dloading"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="navline"></div>
+<div class="clear"></div>
+<!--/**
+//下面数字是900可以随意更改模型大小，上面那个是900宽度，下面600是高度。通过大小看锯齿明显不明显。静态的在谷歌下无法正常显示。只有用火狐才能正堂显示。
+**/-->
+<input type="hidden" name="feikiwidth" id="feikiwidth" value="1200"/>
+<input type="hidden" name="feikiheight" id="feikiheight" value="800"/>
+<!---->
+<script type="text/javascript" src="js/jquery1-1-11.js"></script>
+<script>
+/**
+//只要把json文件放到json文件夹，名字一样就好。后面数字不用更改就好
+**/
+SHOW.AddShoes('T1B1.json','T1B1',1,0);
+SHOW.AddShoes('PAD.json','PAD',2,0);
+SHOW.AddShoes('JG.json','JG',3,0);
+</script>
+</body>    
+</html>

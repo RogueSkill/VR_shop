@@ -1,0 +1,270 @@
+@charset "utf-8";
+/* indexCSS Document */
+.topline {
+	height: 2px;
+	background: #e53c46
+}
+.advertzone {
+	overflow: hidden;
+	background:#f7f3f0 ;
+}
+.show-content {
+	text-align: center;
+	padding-bottom: 50px;
+}
+.pd-t {
+	padding-top: 100px;
+}
+/*#three3D{background:#f3f2f2}*/
+.private {
+	font-size: 36px;
+	color: #666;
+	font-family: "宋体";
+	line-height: 80px;
+}
+.privatetext {
+	line-height: 20px;
+}
+.into {
+	background: url(../images/into.png);
+	display: block;
+	width: 203px;
+	height: 78px;
+}
+.into:hover {
+	background: url(../images/intohover.png)
+}
+.select-zone {
+	overflow: hidden;
+	margin: auto;
+	width: 1180px;
+}
+#main {
+	overflow: hidden;
+}
+.culture-zone {
+	width: 368px;
+	float: left;
+	margin: 0 16px;
+	position: relative;
+	margin-bottom: 6px;
+}
+
+.more {
+	background: url(../images/more.png);
+	width: 78px;
+	height: 44px;
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.more:hover {
+	background: url(../images/more1.png)
+}
+#main li {
+	text-align: left;
+}
+ .nub {
+	font-size: 26px;
+	font-weight: bold;
+	line-height: 70px;
+	text-align: right;
+}
+.video-zone{ clear:both; margin-top:20px;}
+.video-zone li {
+	float: left;
+	background: #f4f4f4;
+	padding-bottom: 10px;
+	position: relative;
+	margin: 0 50px;
+	margin-bottom: 116px;
+}
+.video-zone a {
+	float: left;
+	padding-top: 200px;
+	width: 296px;
+	line-height: 14px;
+}
+.video-zone span {
+	display: block;
+	padding-top: 10px;
+	padding-left: 10px;
+	color: #999;
+}
+.video-zone .videotitle {
+	font-size: 14px;
+	color: #333;
+}
+.video-zone .video1 {
+	float: left;
+	background: url(../images/video1.png) no-repeat top center;
+}
+.video-zone .video2 {
+	float: left;
+	background: url(../images/video2.png) no-repeat top center;
+}
+.video-zone .video3 {
+	float: left;
+	background: url(../images/video3.png) no-repeat top center;
+}
+.play {
+	position: absolute;
+	left: 24px;
+	top: 134px;
+}
+/* cultureCSS Document */
+
+.culturemainbox {
+	background: #f2f0f0;
+	overflow: hidden;
+}
+.culturetheme {
+	float: left;
+	width: 252px;
+	background: #fff;
+	margin: 24px 0;
+	border: 1px solid #e6e4e4;
+	min-height:650px;
+}
+.culturecontent {
+	float: right;
+	width: 880px;
+	background: #fff;
+	margin: 24px 0;
+	padding: 20px;
+	overflow: hidden;
+	border: 1px solid #e6e4e4;
+	min-height:610px;
+}
+.culturetheme dt {
+	padding-left: 40px;
+	font-size: 16px;
+	color: #666;
+	line-height: 32px;
+	cursor: pointer;
+}
+.culturetheme .color {
+	color: #f36;
+}
+.culturetheme dt:hover {
+	color: #f00;
+}
+.culturetheme dd {
+	padding-left: 50px;
+	height:28px;
+	line-height: 28px;
+	cursor: pointer;
+}
+.culturetheme a:hover{
+	color:#F69;
+}
+.culturetheme dd:hover {
+	color: #f00;
+}
+.culturecontent h1 {
+	font-size: 24px;
+}
+.culturecontent h2, h3 {
+	padding: 10px 0;
+}
+.culturecontent p {
+	line-height: 1.6em;
+}
+.culturecontent .group {
+	padding-left: 220px;
+	height: 272px;
+	width: 700;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.culturecontent .man1 {
+	background: url(../images/man1.png) no-repeat center left;
+}
+.culturecontent .man2 {
+	background: url(../images/man2.png) no-repeat center left;
+}
+.culturecontent .man3 {
+	background: url(../images/man4.png) no-repeat center left;
+}
+.culturecontent .man4 {
+	background: url(../images/man3.png) no-repeat center left;
+}
+.group h6 {
+	font-size: 20px;
+	line-height: 1.8em;
+}
+.culturecontent .news {
+	padding-left: 302px;
+	height: 182px;
+	margin-bottom: 20px;
+}
+.culturecontent .news1 {
+	background: url(../images/news.png) no-repeat center left;
+}
+.history {
+	width: 60%;
+	margin: auto;
+}
+.history li {
+	padding-left: 50px;
+	background: url(../images/history.png) no-repeat center left;
+	line-height: 72px;
+}
+.culturecontent section {
+	display: none;
+}
+.culturecontent .show {
+	display: block;
+}
+.company {
+	position: relative;
+	
+}
+.companypt {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.amusement li {
+	float: left;
+	width: 234px;
+	margin: 20px 0;
+	margin-left: 80px;
+}
+.amusement h5 {
+	font-size: 14px;
+	color: #999;
+	text-align: center;
+	line-height: 2em;
+}
+.shop {
+	width: 400px;
+	position: relative;
+	height: 148px;
+}
+.shopfooter {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	width: 400px;
+}
+.shopfooter a {
+	text-align: left;
+	width: 200px;
+}
+.shopzone {
+	padding-top: 20px;
+	overflow: hidden;
+}
+.contact {
+	position: relative;
+}
+.map {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+.newstitlebox{ clear:both; border-bottom:1px dashed #ccc;line-height:28px; margin-bottom:12px; margin-top:12px; text-align:center; padding-bottom:12px;} 
+.newstitlebox strong{ font-size:16px;line-height: 180%;}
